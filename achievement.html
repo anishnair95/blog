@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAN WALKER|ACHIEVEMENTS</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Maven+Pro&family=Rubik:wght@500&display=swap"
+    rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6e0454b3f8.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background: url("img/abg2.jpg") no-repeat center center/cover fixed;
+            color: crimson;
+            /* font-size: 50px; */
+        }
+
+        #achieve-section {
+            display: flex;
+            flex-direction: column;
+
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /* margin:10px 30px; */
+
+
+        }
+
+        .achieve-container::before {
+            content: "";
+            background: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+            overflow: hidden;
+        }
+
+        .achieve-container {
+
+            position: relative;
+            padding:86px;
+
+            margin: 50px 50px;
+            text-align: center;
+            
+            max-width: 900px;
+            display: grid;
+            grid-gap: 25px;
+
+            grid-template-columns: 1fr 1fr;
+
+           
+
+        }
+
+        .box {
+            
+           
+            border-radius: 12px;
+            position: relative;
+            overflow:hidden;
+            
+        }
+
+        .box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+
+        
+        
+        .award-about{
+            display: none;
+            color:white;
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+            background-color:rgba(220, 20, 60, 0.438);
+
+
+        }
+
+        .box:hover .award-about{
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+             
+            }
+
+
+
+
+        /*footer-section*/
+
+        #footer{
+    background: url("img/footer.jpg") no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+    /* height: 200px; */
+    padding:40px;
+    background-blend-mode: multiply;
+
+    /* text-align: center; */
+}
+#footer h2{
+    text-align: center;
+}
+#footer p{
+    margin-top:50px;
+    text-align: center;
+}
+.icon{
+    /* width:100%;  */
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    /* border:2px solid white; */
+    /* justify-content: space-around; */
+
+   
+}
+
+
+.icon a{
+
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    margin: 5px 8px;
+
+    
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.692);
+
+    color:black;
+                         /* flex done to center icon  */
+    display:flex;                        
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon a:hover{
+    background-color:#00ffffa6;
+    color:white;
+    transition:all ease-in .2s;
+}
+
+/* Utility Classes */
+
+
+  .h-primary{
+    
+    font-size:3rem;
+    font-family: 'Rubik', sans-serif;
+  }
+
+
+.h-primary span{
+    color:crimson;
+}
+
+.h-secondary{
+
+    font-size:1.5rem;
+    font-weight: bold;
+    font-family: 'Baloo 2', serif,cursive;
+    line-height: 45px;
+}
+
+.h-heading{
+
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    font-size:3.5rem;
+    padding:25px 0px;
+    color:crimson;
+    
+
+}
+
+
+
+@media only screen and (max-width:695px)
+{
+
+   .h-primary {
+        font-size: 1.2rem;
+    }
+    .h-heading{
+        font-size:2.5rem;
+    }
+
+    .h-secondary{
+        font-size: 0.6rem;
+    line-height: 20px;
+    }
+
+    .achieve-container {
+
+    position: relative;
+    padding:20px;
+
+    margin: 50px 3px;
+    text-align: center;
+
+    max-width: 900px;
+    display: grid;
+    grid-gap: 25px;
+
+    grid-template-columns: 1fr 1fr;
+
+
+
+}
+}
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="achieve-section">
+
+        <h2 class="h-heading">ACHIEVEMENTS</h2>
+
+        <div class="achieve-container">
+         <!-- ::before  -->
+            <div class="box">
+                
+                <img src="img/award1.jpg" alt="Award1">
+                <div class="award-about h-secondary">
+                    <h2>Cannes Lions International Festival of Creativity</h2>
+                    <p><b>YEAR:  </b>2016</p>
+                    <p><b>WORKS:  </b>Faded</p>
+                </div>
+
+            </div>
+            <div class="box">
+                
+                <img src="img/award2.jpg" alt="Award2">
+                <div class="award-about h-secondary">
+                    <h2>Eska Music Awards</h2>
+                    <p><b>YEAR:  </b>2016</p>
+                    <p><b>WORKS:  </b>Faded(Best International Hit)</p>
+                </div>
+
+            </div>
+            <div class="box">
+                
+                <img src="img/award3.jpg" alt="Award3">
+                <div class="award-about h-secondary">
+                    <h2>KKBox Music Awards</h2>
+                    <p><b>YEAR:  </b>2017</p>
+                    <p><b>WORKS:  </b>Faded(Best Western Single of the Year)</p>
+                </div>
+
+            </div>
+            <div class="box">
+                
+                <img src="img/award4.jpg" alt="Award4">
+                <div class="award-about h-secondary">
+                    <h2>MTV Europe Music Awards</h2>
+                    <p><b>YEAR:  </b>2016</p>
+                    <p><b>WORKS:  </b>Best Norwegian Act</p>
+                </div>
+
+            </div>
+            <div class="box">
+                
+                <img src="img/award5.jpg" alt="Award5">
+                <div class="award-about h-secondary">
+                    <h2>NRJ Music Awards Norge</h2>
+                    <p><b>YEAR:  </b>2016</p>
+                    <p><b>WORKS:  </b>Sing Me to Sleep(Norwegian Song of the Year)</p>
+                </div>
+
+            </div>
+            <div class="box">
+                
+                <img src="img/award6.jpg" alt="Award6">
+                <div class="award-about h-secondary">
+                    <h2>Spellemannprisen</h2>
+                    <p><b>YEAR:  </b>2017</p>
+                    <p><b>WORKS:  </b>(FadedSong of the Year)</p>
+                </div>
+
+            </div>
+            <div class="box">
+                
+                <img src="img/award7.png" alt="Award7">
+                <div class="award-about h-secondary">
+                    <h2>Swiss Music Awards</h2>
+                    <p><b>YEAR:  </b>2017</p>
+                    <p><b>WORKS:  </b>Faded(Best International Hit)</p>
+                </div>
+
+            </div>
+            <div class="box">
+                
+                <img src="img/award8.jpg" alt="Award8">
+                <div class="award-about h-secondary">
+                    <h2>CWDM Radio Awards</h2>
+                    <p><b>YEAR:  </b>2017</p>
+                    <p><b>WORKS:  </b>Best New Talent</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <div class="footer-section">
+
+        <h2 class="h-primary"><span>A</span>NISH <span>V</span>IJAY <span>N</span>AIR</h2>
+
+        <p class="h-secondary">Currently pursuing B.Tech in CSE with Specialisation in Cyber Security from SRMIST
+            Kattankulathur,Chennai</p>
+ 
+        <div class="icon">
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp f"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></i></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+ 
+
+        <p class="h-secondary">Copyright © 2021 Anish. All rights reserved</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
